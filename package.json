@@ -1,6 +1,6 @@
 {
   "name": "convex-nuxt",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Convex integration for Nuxt",
   "keywords": [
     "nuxt",
@@ -8,7 +8,7 @@
     "vue"
   ],
   "author": "Chris Visser<hello@chrisvisser.io>",
-  "repository": "cvisser/convex-nuxt",
+  "repository": "chris-visser/convex-nuxt",
   "license": "MIT",
   "type": "module",
   "exports": {
