@@ -1,0 +1,61 @@
+{
+  "name": "convex-nuxt",
+  "version": "0.0.1",
+  "description": "Convex integration for Nuxt",
+  "keywords": [
+    "nuxt",
+    "convex",
+    "vue"
+  ],
+  "author": "Chris Visser<hello@chrisvisser.io>",
+  "repository": "cvisser/convex-nuxt",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/types.d.mts",
+      "import": "./dist/module.mjs"
+    }
+  },
+  "main": "./dist/module.mjs",
+  "typesVersions": {
+    "*": {
+      ".": [
+        "./dist/types.d.mts"
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prepack": "bun run nuxt-module-build build",
+    "dev": "bun run nuxi dev playground --dotenv .env.local",
+    "dev:build": "bun run nuxi build playground",
+    "dev:prepare": "bun run nuxt-module-build build --stub && bun run nuxt-module-build prepare && bun run nuxi prepare playground",
+    "release": "bun run lint && bun run test && bun run prepack && bun run changelogen --release && bun publish && git push --follow-tags",
+    "lint": "bun run eslint .",
+    "test": "bun run vitest run",
+    "test:watch": "bun run vitest watch",
+    "test:types": "bun run vue-tsc --noEmit && cd playground && bun run vue-tsc --noEmit"
+  },
+  "dependencies": {
+    "@nuxt/kit": "^3.17.3",
+    "convex-vue": "^0.0.1"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "^2.4.0",
+    "@nuxt/eslint-config": "^1.3.0",
+    "@nuxt/module-builder": "^1.0.1",
+    "@nuxt/schema": "^3.16.2",
+    "@nuxt/test-utils": "^3.17.2",
+    "@types/node": "latest",
+    "changelogen": "^0.6.1",
+    "defu": "^6.1.4",
+    "eslint": "^9.25.1",
+    "nuxt": "^3.16.2",
+    "typescript": "~5.8.3",
+    "vitest": "^3.1.2",
+    "vue-tsc": "^2.2.8"
+  }
+}
