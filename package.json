@@ -41,7 +41,7 @@
   },
   "dependencies": {
     "@nuxt/kit": "^3.17.3",
-    "convex-vue": "^0.0.1"
+    "convex-vue": "^0.0.4"
   },
   "devDependencies": {
     "@nuxt/devtools": "^2.4.0",
