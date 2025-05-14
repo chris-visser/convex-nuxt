@@ -1,5 +1,4 @@
 import { defineNuxtModule, addPlugin, createResolver, updateRuntimeConfig } from '@nuxt/kit'
-import defu from 'defu'
 
 // Module options TypeScript interface definition
 export interface ModuleOptions {
@@ -17,10 +16,6 @@ export default defineNuxtModule<ModuleOptions>({
     const resolver = createResolver(import.meta.url)
 
     addPlugin(resolver.resolve('./runtime/plugin'))
-
-    // nuxt.options.runtimeConfig.public.convex = defu(nuxt.options.runtimeConfig.public.convex, {
-    //   url: options.url,
-    // })
 
     updateRuntimeConfig({
       public: {
