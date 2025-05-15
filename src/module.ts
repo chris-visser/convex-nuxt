@@ -1,6 +1,4 @@
-import { defineNuxtModule, addPlugin, createResolver, updateRuntimeConfig } from '@nuxt/kit'
-
-export * from 'convex-vue'
+import { defineNuxtModule, addPlugin, createResolver, updateRuntimeConfig, addImports } from '@nuxt/kit'
 
 // Module options TypeScript interface definition
 export interface ModuleOptions {
@@ -18,6 +16,12 @@ export default defineNuxtModule<ModuleOptions>({
     const resolver = createResolver(import.meta.url)
 
     addPlugin(resolver.resolve('./runtime/plugin'))
+
+    addImports([
+      { name: 'useConvexClient', from: 'convex-vue' },
+      { name: 'useConvexQuery', from: 'convex-vue' },
+      { name: 'useConvexMutation', from: 'convex-vue' },
+    ])
 
     updateRuntimeConfig({
       public: {
