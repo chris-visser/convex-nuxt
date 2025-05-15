@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.5
+
+[compare changes](https://github.com/chris-visser/convex-nuxt/compare/v0.0.4...v0.0.5)
+
+### 🏡 Chore
+
+- Pass convex-vue functions ([c61633f](https://github.com/chris-visser/convex-nuxt/commit/c61633f))
+
+### ❤️ Contributors
+
+- Chris Visser ([@chris-visser](https://github.com/chris-visser))
+
 ## v0.0.4
 
 [compare changes](https://github.com/chris-visser/convex-nuxt/compare/v0.0.3...v0.0.4)
