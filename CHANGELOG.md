@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.6
+
+[compare changes](https://github.com/chris-visser/convex-nuxt/compare/v0.0.5...v0.0.6)
+
+### 🚀 Enhancements
+
+- Add auto imports for composables ([a319005](https://github.com/chris-visser/convex-nuxt/commit/a319005))
+
+### ❤️ Contributors
+
+- Chris Visser ([@chris-visser](https://github.com/chris-visser))
+
 ## v0.0.5
 
 [compare changes](https://github.com/chris-visser/convex-nuxt/compare/v0.0.4...v0.0.5)
