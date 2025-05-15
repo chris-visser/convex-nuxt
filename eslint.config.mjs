@@ -15,6 +15,9 @@ export default createConfigForNuxt({
     ],
   },
 })
-  .append(
-    // your custom flat config here...
+  .prepend([
+    {
+      ignores: ['node_modules/', 'dist/'],
+    },
+  ],
   )

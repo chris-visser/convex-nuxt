@@ -1,5 +1,7 @@
 import { defineNuxtModule, addPlugin, createResolver, updateRuntimeConfig } from '@nuxt/kit'
 
+export * from 'convex-vue'
+
 // Module options TypeScript interface definition
 export interface ModuleOptions {
   url: string
