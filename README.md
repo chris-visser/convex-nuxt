@@ -46,6 +46,10 @@ That's it! You can now use Convex Nuxt in your Nuxt app ✨
 
 ## Authentication
 
+Authentication providers can be connected to the module by creating a small plugin. The main purpose of this 
+plugin is to pass a method that returns a token to Convex. This will allow Convex functions like queries and mutations
+ to be aware of the user.
+
 ### Clerk
 
 Create a plugin in the `plugins` directory, e.g. `plugins/convexClerk.ts` and add the following code:
