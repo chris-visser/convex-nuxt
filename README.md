@@ -44,6 +44,42 @@ export default defineNuxtConfig({
 
 That's it! You can now use Convex Nuxt in your Nuxt app ✨
 
+## Authentication
+
+### Clerk
+
+Create a plugin in the `plugins` directory, e.g. `plugins/convexClerk.ts` and add the following code:
+
+```ts
+export default defineNuxtPlugin(() => {
+  const convex = useConvexClient() // from convex-nuxt
+  const auth = useAuth() // from @clerk/nuxt
+
+  // Whenever Convex needs a token, it will call this function
+  const getToken = async () => {
+    return auth.getToken.value({
+      template: 'convex',
+      skipCache: false,
+    })
+  }
+
+  convex.setAuth(getToken)
+})
+```
+
+From this point on, you can implement the Clerk module as you would normally do. Also, the Convex functions 
+will have access to the logged in user like below:
+
+```ts
+export const get = query({
+  args: {},
+  handler: async (ctx) => {
+      const identity = await ctx.auth.getUserIdentity() // The logged in user from Clerk
+  },
+})
+```
+
+
 ## Contribution
 
 <details>
