@@ -5,7 +5,7 @@
       "name": "my-module",
       "dependencies": {
         "@nuxt/kit": "^3.17.3",
-        "convex-vue": "^0.0.4",
+        "convex-vue": "^0.0.5",
       },
       "devDependencies": {
         "@nuxt/devtools": "^2.4.0",
@@ -692,7 +692,7 @@
 
     "convex": ["convex@1.24.1", "", { "dependencies": { "esbuild": "0.25.2", "jwt-decode": "^4.0.0", "prettier": "3.5.3" }, "peerDependencies": { "@auth0/auth0-react": "^2.0.1", "@clerk/clerk-react": "^4.12.8 || ^5.0.0", "react": "^18.0.0 || ^19.0.0-0 || ^19.0.0" }, "optionalPeers": ["@auth0/auth0-react", "@clerk/clerk-react", "react"], "bin": { "convex": "bin/main.js" } }, "sha512-LucaIBktohO7KuKKsxLXxGhKoxYqcLUFqOXoC2p0HU4f8lWKNmDv1ackTB4DU5u/thnh/tIOvySEVNdoAdGXAw=="],
 
-    "convex-vue": ["convex-vue@0.0.4", "", { "peerDependencies": { "convex": ">=1.24.0", "vue": ">=3.5.0" } }, "sha512-CE+qq/azgPZl+xXTO380VUPSCHEOE9cU7g2wlYVpbAaz4PuaUAB44GPO5B7OvELD9zayRAOe7+ikX8l75iX5gA=="],
+    "convex-vue": ["convex-vue@0.0.5", "", { "peerDependencies": { "convex": ">=1.24.0", "vue": ">=3.5.0" } }, "sha512-gUma2uL0Glz4kdsv6h/Ig3JY81Zzkd9KwX+wANKGH4RzbXBH7YGnCS7PFabx8Cl6IFWy3QetlfQ9VcdvsPORww=="],
 
     "cookie": ["cookie@1.0.2", "", {}, "sha512-9Kr/j4O16ISv8zBBhJoi4bXOYNTkFLOqSL3UDB0njXxCXNezjeyVrJyGOWtgfs/q2km1gwBcfH8q1yEGoMYunA=="],
 

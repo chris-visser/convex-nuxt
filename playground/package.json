@@ -5,9 +5,11 @@
   "scripts": {
     "dev": "nuxi dev --dotenv .env.local",
     "build": "nuxi build",
-    "generate": "nuxi generate"
+    "generate": "nuxi generate",
+    "convex:dev": "convex dev"
   },
   "dependencies": {
+    "convex": "^1.24.1",
     "nuxt": "^3.16.2"
   }
 }
