@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v0.0.7
+
+[compare changes](https://github.com/chris-visser/convex-nuxt/compare/v0.0.5...v0.0.7)
+
+### 🚀 Enhancements
+
+- Nuxt SSR/SSR support on useConvexQuery ([35f6492](https://github.com/chris-visser/convex-nuxt/commit/35f6492))
+
+### 📖 Documentation
+
+- Add auth implementation doc to README.md ([407ba0d](https://github.com/chris-visser/convex-nuxt/commit/407ba0d))
+
+### ❤️ Contributors
+
+- Chris Visser ([@chris-visser](https://github.com/chris-visser))
+
 ## v0.0.6
 
 [compare changes](https://github.com/chris-visser/convex-nuxt/compare/v0.0.5...v0.0.6)
