@@ -21,13 +21,13 @@ export default defineNuxtModule<ModuleOptions>({
       { name: 'useConvexClient', from: 'convex-vue' },
       { name: 'useConvexQuery', from: 'convex-vue' },
       { name: 'useConvexMutation', from: 'convex-vue' },
+      { name: 'useConvexHttpQuery', from: 'convex-vue' },
     ])
 
     updateRuntimeConfig({
       public: {
         convex: {
           url: options.url,
-          // auth: options.getAuth,
         },
       },
     })

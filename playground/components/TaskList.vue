@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-
 import { api } from '@/convex/_generated/api'
 
 const { data, error, isLoading, suspense } = useConvexQuery(api.tasks.get)
