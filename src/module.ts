@@ -15,8 +15,6 @@ export default defineNuxtModule<ModuleOptions>({
   setup(options) {
     const resolver = createResolver(import.meta.url)
 
-    addPlugin(resolver.resolve('./runtime/plugin'))
-
     addImports([
       { name: 'useConvexClient', from: 'convex-vue' },
       { name: 'useConvexQuery', from: 'convex-vue' },
@@ -31,5 +29,7 @@ export default defineNuxtModule<ModuleOptions>({
         },
       },
     })
+
+    addPlugin(resolver.resolve('./runtime/plugin'))
   },
 })
