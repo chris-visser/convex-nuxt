@@ -1,13 +1,30 @@
 <script setup lang="ts">
 import { api } from '@/convex/_generated/api'
+import type { Id } from '~/convex/_generated/dataModel'
 
-const { data, error, isLoading, suspense } = useConvexQuery(api.tasks.get)
+const { data, error, isPending, suspense } = useConvexQuery(api.tasks.get)
 
 await suspense()
 
 const { error: removeError, mutate: remove } = useConvexMutation(api.tasks.remove)
 const newTask = ref('')
-const { mutate: addTask, isLoading: isNewTaskLoading } = useConvexMutation(api.tasks.add)
+const { mutate: addTask, isPending: isNewTaskLoading } = useConvexMutation(api.tasks.add, {
+  optimisticUpdate(ctx, { text }) {
+    const current = ctx.getQuery(api.tasks.get, {})
+    if (!current)
+      return
+
+    ctx.setQuery(api.tasks.get, {}, [
+      ...current,
+      {
+        _creationTime: Date.now(),
+        _id: 'optimistic_id' as Id<'tasks'>,
+        completed: false,
+        text,
+      },
+    ])
+  },
+})
 
 const handleNewTask = () => {
   if (newTask.value.trim() === '') {
@@ -35,7 +52,7 @@ const handleNewTask = () => {
         <span v-else>Save</span>
       </button>
     </form>
-    <p v-if="isLoading">
+    <p v-if="isPending">
       Loading...
     </p>
     <p
@@ -62,7 +79,7 @@ const handleNewTask = () => {
           type="button"
           @click="() => remove({ id: _id })"
         >
-          <span v-if="isLoading">...</span>
+          <span v-if="isPending">...</span>
           <span v-else>X</span>
         </button>
       </li>
