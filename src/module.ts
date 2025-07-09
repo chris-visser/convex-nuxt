@@ -1,11 +1,7 @@
 import { defineNuxtModule, addPlugin, createResolver, updateRuntimeConfig, addImports } from '@nuxt/kit'
+import type { ConvexVueOptions } from 'convex-vue'
 
-// Module options TypeScript interface definition
-export interface ModuleOptions {
-  url: string
-}
-
-export default defineNuxtModule<ModuleOptions>({
+export default defineNuxtModule<ConvexVueOptions>({
   meta: {
     name: 'convex-nuxt',
     configKey: 'convex',
@@ -24,9 +20,7 @@ export default defineNuxtModule<ModuleOptions>({
 
     updateRuntimeConfig({
       public: {
-        convex: {
-          url: options.url,
-        },
+        convex: options,
       },
     })
 
