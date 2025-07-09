@@ -1,5 +1,21 @@
 # Changelog
 
+## v0.1.3
+
+[compare changes](https://github.com/chris-visser/convex-nuxt/compare/v0.1.2...v0.1.3)
+
+### 🚀 Enhancements
+
+- Pass down convex-vue options ([ccca7f0](https://github.com/chris-visser/convex-nuxt/commit/ccca7f0))
+
+### 🏡 Chore
+
+- **release:** V0.1.2 ([1ad4775](https://github.com/chris-visser/convex-nuxt/commit/1ad4775))
+
+### ❤️ Contributors
+
+- Chris Visser ([@chris-visser](https://github.com/chris-visser))
+
 ## v0.1.2
 
 [compare changes](https://github.com/chris-visser/convex-nuxt/compare/v0.1.0...v0.1.2)
