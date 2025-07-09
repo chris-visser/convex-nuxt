@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.1.1
+
+[compare changes](https://github.com/chris-visser/convex-nuxt/compare/v0.1.0...v0.1.1)
+
 ## v0.1.0
 
 [compare changes](https://github.com/chris-visser/convex-nuxt/compare/v0.0.7...v0.0.8)
