@@ -9,7 +9,7 @@
     "convex:dev": "convex dev"
   },
   "dependencies": {
-    "convex": "^1.24.1",
-    "nuxt": "^3.16.2"
+    "convex": "^1.25.2",
+    "nuxt": "^3.17.6"
   }
 }
