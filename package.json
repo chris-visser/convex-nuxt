@@ -40,9 +40,16 @@
     "test:watch": "bun run vitest watch",
     "test:types": "bun run vue-tsc --noEmit && cd playground && bun run vue-tsc --noEmit"
   },
-  "dependencies": {
-    "@nuxt/kit": "^3.17.6",
+  "peerDependencies": {
     "convex-vue": "^0.1.1"
+  },
+  "peerDependenciesMeta": {
+    "convex-vue": {
+      "optional": false
+    }
+  },
+  "dependencies": {
+    "@nuxt/kit": "^3.17.6"
   },
   "devDependencies": {
     "@nuxt/devtools": "^2.6.2",
