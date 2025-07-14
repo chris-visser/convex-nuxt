@@ -1,5 +1,28 @@
 # Changelog
 
+## v0.1.4
+
+[compare changes](https://github.com/chris-visser/convex-nuxt/compare/v0.1.2...v0.1.4)
+
+### 🚀 Enhancements
+
+- Pass down convex-vue options ([ccca7f0](https://github.com/chris-visser/convex-nuxt/commit/ccca7f0))
+- Bump convex-vue to support ssr ([f8e3e0b](https://github.com/chris-visser/convex-nuxt/commit/f8e3e0b))
+
+### 🏡 Chore
+
+- **release:** V0.1.2 ([1ad4775](https://github.com/chris-visser/convex-nuxt/commit/1ad4775))
+- **release:** V0.1.3 ([745c1e4](https://github.com/chris-visser/convex-nuxt/commit/745c1e4))
+- Allow deps to be minor bumped ([4ea459d](https://github.com/chris-visser/convex-nuxt/commit/4ea459d))
+- Update deps ([6d9ed2e](https://github.com/chris-visser/convex-nuxt/commit/6d9ed2e))
+- Set `packageManager` ([fea0de4](https://github.com/chris-visser/convex-nuxt/commit/fea0de4))
+- Move  `convex-vue` to peerDep ([c5556ec](https://github.com/chris-visser/convex-nuxt/commit/c5556ec))
+
+### ❤️ Contributors
+
+- Chris Visser ([@chris-visser](https://github.com/chris-visser))
+- NamesMT ([@NamesMT](https://github.com/NamesMT))
+
 ## v0.1.3
 
 [compare changes](https://github.com/chris-visser/convex-nuxt/compare/v0.1.2...v0.1.3)
