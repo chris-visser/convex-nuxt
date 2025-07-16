@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.1.5
+
+[compare changes](https://github.com/chris-visser/convex-nuxt/compare/v0.1.4...v0.1.5)
+
+### 🏡 Chore
+
+- Bump convex-vue ([c52b080](https://github.com/chris-visser/convex-nuxt/commit/c52b080))
+
+### ❤️ Contributors
+
+- Chris Visser ([@chris-visser](https://github.com/chris-visser))
+
 ## v0.1.4
 
 [compare changes](https://github.com/chris-visser/convex-nuxt/compare/v0.1.2...v0.1.4)
