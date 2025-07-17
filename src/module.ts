@@ -13,6 +13,7 @@ export default defineNuxtModule<ConvexVueOptions>({
 
     addImports([
       { name: 'useConvexClient', from: 'convex-vue' },
+      { name: 'useConvexHttpClient', from: 'convex-vue' },
       { name: 'useConvexQuery', from: 'convex-vue' },
       { name: 'useConvexMutation', from: 'convex-vue' },
       { name: 'useConvexHttpQuery', from: 'convex-vue' },
