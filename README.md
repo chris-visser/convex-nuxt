@@ -83,6 +83,28 @@ export const get = query({
 })
 ```
 
+### SSR with Suspense
+
+If you want to use SSR with Suspense, you must also set the auth on `useConvexHttpClient` like this:
+
+```ts
+export default defineNuxtPlugin(async () => {
+  const convex = useConvexClient() // from convex-nuxt
+  const convexHttp = useConvexHttpClient() // for SSR/Suspense
+  const auth = useAuth() // from @clerk/nuxt
+
+  // Whenever Convex needs a token, it will call this function
+  const getToken = async () => {
+    return auth.getToken.value({
+      template: 'convex',
+      skipCache: false,
+    })
+  }
+
+  convex.setAuth(getToken)
+  convexHttp.setAuth(await getToken()) // for SSR/Suspense
+})
+```
 
 ## Contribution
 
